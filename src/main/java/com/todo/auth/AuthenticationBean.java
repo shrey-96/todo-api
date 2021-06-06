@@ -1,10 +1,10 @@
 package com.todo.auth;
 
-public class Bean {
+public class AuthenticationBean {
 
 	private String message;
 
-	public Bean(String message) {
+	public AuthenticationBean(String message) {
 		this.message = message;
 	}
 
