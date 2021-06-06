@@ -1,4 +1,4 @@
-package com.todo;
+package com.todo.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -26,6 +26,7 @@ public class TodoResource {
 	@Autowired
 	private TodoHardCodedService todoService;
 	
+	
 	@GetMapping("/users/{username}/todos")
 	public List<Todo> getAllTodos(@PathVariable String username) {
 		return todoService.findAll();
@@ -35,7 +36,6 @@ public class TodoResource {
 	public void test() {
 		System.out.println("YOu've hit this endpoint");
 	}
-	
 	
 	@GetMapping("/users/{username}/todos/{id}")
 	public Todo getTodo(@PathVariable String username, @PathVariable long id) {
@@ -64,6 +64,7 @@ public class TodoResource {
 		
 	}
 	
+	@CrossOrigin(origins="http://127.0.0.1:4200")
 	@PostMapping("/users/{username}/todos")
 	public ResponseEntity<Void> createTodo(
 			@PathVariable String username,

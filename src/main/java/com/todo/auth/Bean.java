@@ -1,4 +1,4 @@
-package com.todo.testController;
+package com.todo.auth;
 
 public class Bean {
 
