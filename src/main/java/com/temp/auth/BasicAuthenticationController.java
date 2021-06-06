@@ -1,4 +1,4 @@
-package com.todo.auth;
+package com.temp.auth;
 
 
 import org.springframework.web.bind.annotation.CrossOrigin;
